@@ -42,12 +42,10 @@ local options = {
 }
 
 -- everforest colorscheme settings
-local everforest_options = {
-	everforest_background = "hard",
-	everforest_better_performance = 1,
-	everforest_show_eob = 0,
+local global_options = {
 	do_filetype_lua = 1,
 	did_load_filetypes = 0,
+  ts_highlight_lua = true
 }
 
 -- Disable some builtin vim plugins
@@ -78,7 +76,7 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-for k, v in pairs(everforest_options) do
+for k, v in pairs(global_options) do
 	vim.g[k] = v
 end
 
