@@ -5,7 +5,7 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 
---[[ local header4 = { ]]
+--[[ local florence_lg = { ]]
 --[[ 	"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⢀⣠⢴⠖⠢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", ]]
 --[[ 	"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠶⣖⠚⣠⢤⠥⡌⠭⡠⣁⠠⠢⡉⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", ]]
 --[[ 	"⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠤⠏⡁⠆⢁⠀⠀⡠⠀⣀⢀⠐⠢⠠⠀⠚⠲⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", ]]
@@ -41,7 +41,7 @@ local dashboard = require("alpha.themes.dashboard")
 --[[ 	"⠀⠀⠀⠀⡀⠀⡠⡎⠬⡆⠸⠺⡃⡇⣾⢧⡜⡲⣑⢸⣼⣿⣿⡄⢙⡄⡌⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠊⡨⢪⣷⣯⣟⡆⠱⡬⡇⠘⡈⠈⠄⠈⢯⢁⠎⡏⡠⡀⠀⠀⠀⠀⠀⠀⠀⠀", ]]
 --[[ } ]]
 
-local header5 = {
+local florence_sm = {
 	"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠀⢠⠲⢒⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
 	"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣚⠾⠂⠓⠋⢋⠑⠒⢨⠀⢁⡱⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
 	"⠀⠀⠀⠡⡂⠄⢠⢢⢀⡀⠀⠀⠀⠀⠀⢀⠤⠒⠀⠈⡨⠎⠒⣄⣲⡁⠠⠈⠀⢤⠨⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
@@ -97,7 +97,7 @@ end
 local function colorize_header()
 	local lines = {}
 
-	for i, chars in pairs(header5) do
+	for i, chars in pairs(florence_sm) do
 		local line = {
 			type = "text",
 			val = chars,
@@ -124,8 +124,6 @@ local buttons = {
 	val = {
 		{
 			type = "text",
-			--[[ val = "•───────⋅☾ ☽⋅───────•", ]]
-			--[[ val = "•──────────────────────•°•❀•°•──────────────────────•", ]]
 			val = "⊱┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•°•❀ •°•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⊰",
 			opts = { hl = "Comment", position = "center" },
 		},
@@ -162,7 +160,7 @@ local buttons = {
 			"Comment"
 		),
 		{ type = "padding", val = 1 },
-		create_button("  Quit Neovim", ":qa<CR>", "Statement", "q", "Comment"),
+		create_button("  Quit", ":qa<CR>", "Statement", "q", "Comment"),
 	},
 	position = "center",
 }
