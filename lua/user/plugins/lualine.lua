@@ -44,14 +44,8 @@ local mode = {
 
 local filetype = {
 	"filetype",
-	fmt = function(str)
-		-- return "  " .. str
-		return " " .. str
-	end,
 	icons_enabled = true,
 	icon = { align = "left" },
-	color = { bg = "#663920" },
-	separator = { left = "", right = "" },
 }
 
 local branch = {
@@ -61,29 +55,12 @@ local branch = {
 		" ",
 		color = { fg = "#fc8363" },
 	},
-	separator = { right = "" },
-	color = { bg = "#663920" },
 }
 
 local location = {
 	"location",
-	separator = { right = "" },
-	-- padding = { left = 1, right = 1 },
+	separator = { left = "", right = "" },
 }
-
--- cool function for progress
--- local progress = function()
--- 	local current_line = vim.fn.line(".")
--- 	local total_lines = vim.fn.line("$")
--- 	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
--- 	local line_ratio = current_line / total_lines
--- 	local index = math.ceil(line_ratio * #chars)
--- 	return chars[index]
--- end
-
--- local spaces = function()
--- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
--- end
 
 lualine.setup({
 	options = {
