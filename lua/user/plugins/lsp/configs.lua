@@ -16,7 +16,6 @@ local servers = {
 	"pylsp",
 	"pyright",
 	"tailwindcss",
-	--[[ "cssmodules_ls", ]]
 }
 
 lsp_installer.setup({
