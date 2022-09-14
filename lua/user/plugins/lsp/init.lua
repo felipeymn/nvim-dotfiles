@@ -5,4 +5,4 @@ end
 
 require("user.plugins.lsp.configs")
 require("user.plugins.lsp.handlers").setup()
-require("user.plugins.lsp.null_ls")
+--[[ require("user.plugins.lsp.null_ls") ]]
