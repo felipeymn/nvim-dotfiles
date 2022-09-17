@@ -94,6 +94,7 @@ return packer.startup(function(use)
 	use("kylechui/nvim-surround")
 	use("norcalli/nvim-colorizer.lua")
 	use("Fymyte/rasi.vim")
+  use("folke/which-key.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
