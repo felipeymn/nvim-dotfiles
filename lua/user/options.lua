@@ -2,7 +2,7 @@ local options = {
 	--[[ shell = "bin/bash", ]]
 	backup = false, -- creates a backup file
 	clipboard = "unnamedplus", -- allows neovim to access the system clipboard
-	cmdheight = 0, -- more space in the neovim command line for displaying messages completeopt = { "menuone", "noselect" }, -- mostly just for cmp
+	cmdheight = 1, -- more space in the neovim command line for displaying messages completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 	completeopt = { "menuone", "noselect" },
 	fillchars = {
 		eob = " ",
