@@ -66,9 +66,7 @@ lualine.setup({
 	options = {
 		icons_enabled = true,
 		theme = "florence",
-		--[[ section_separators = { left = "", right = "" }, ]]
 		disabled_filetypes = { "alpha", "dashboard" },
-		--[[ always_divide_middle = true, ]]
 		globalstatus = true,
 	},
 	sections = {
