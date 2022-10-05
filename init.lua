@@ -25,4 +25,8 @@ require("user.plugins.telescope")
 require("user.plugins.treesitter")
 require("user.plugins.toggleterm")
 require("user.plugins.which_key")
+require("user.plugins.indent_blankline")
+require("user.plugins.delaytrain")
+require("user.plugins.nvim_notify")
+require("user.plugins.dressing")
 --[[ require("user.plugins.playground") ]]

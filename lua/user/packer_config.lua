@@ -87,11 +87,18 @@ return packer.startup(function(use)
 	use("kylechui/nvim-surround")
 	use("norcalli/nvim-colorizer.lua")
 	use("Fymyte/rasi.vim")
-  use("folke/which-key.nvim")
-
+	use("folke/which-key.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
+	use("ja-ford/delaytrain.nvim")
+	use("stevearc/dressing.nvim")
+	use("rcarriga/nvim-notify")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
+
+	vim.notify("Packer Ready", "info", {
+		title = "INFO",
+	})
 end)
