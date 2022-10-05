@@ -50,11 +50,8 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use("goolord/alpha-nvim")
-
 	-- Colorscheme
-	--	use("sainnhe/everforest")
 	use("felipeymn/florence.nvim")
-
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/mason.nvim")
@@ -78,9 +75,8 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter", -- Language parser that provides better syntax highlighting and other features
 		run = ":TSUpdate",
 	})
-	--[[ use("nvim-treesitter/playground") ]]
-
 	-- Utils
+	--[[ use("nvim-treesitter/playground") ]]
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("JoosepAlviste/nvim-ts-context-commentstring") -- Define comment style based on the current cursor location
 	use("lewis6991/gitsigns.nvim") -- Git decorations for buffers

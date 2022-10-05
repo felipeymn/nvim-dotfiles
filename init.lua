@@ -25,3 +25,4 @@ require("user.plugins.telescope")
 require("user.plugins.treesitter")
 require("user.plugins.toggleterm")
 require("user.plugins.which_key")
+--[[ require("user.plugins.playground") ]]

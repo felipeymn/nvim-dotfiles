@@ -42,11 +42,11 @@ local options = {
 }
 
 -- everforest colorscheme settings
-local global_options = {
-	do_filetype_lua = 1,
-	did_load_filetypes = 0,
-  ts_highlight_lua = true
-}
+--[[ local global_options = { ]]
+	--[[ do_filetype_lua = 1, ]]
+	--[[ did_load_filetypes = 0, ]]
+  --[[ ts_highlight_lua = true ]]
+--[[ } ]]
 
 -- Disable some builtin vim plugins
 local disabled_built_ins = {
@@ -76,9 +76,9 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-for k, v in pairs(global_options) do
-	vim.g[k] = v
-end
+--[[ for k, v in pairs(global_options) do ]]
+--[[ 	vim.g[k] = v ]]
+--[[ end ]]
 
 for _, v in pairs(disabled_built_ins) do
 	vim.g["loaded_" .. v] = 1
