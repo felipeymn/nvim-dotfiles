@@ -43,7 +43,8 @@ function Lualine.config()
     "mode",
     fmt = function(str)
       -- return "  " .. str
-      return " " .. str
+      -- return " " .. str:sub(1, 1)
+      return str:sub(1, 1)
     end,
     separator = { left = "", right = " " },
   }
@@ -82,7 +83,8 @@ function Lualine.config()
       globalstatus = true,
     },
     sections = {
-      lualine_a = { mode },
+      -- lualine_a = { mode },
+      lualine_a = {},
       lualine_b = { branch },
       lualine_c = { diff },
       lualine_x = { filetype },
