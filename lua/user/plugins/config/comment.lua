@@ -1,4 +1,4 @@
-local Comment = {"numToStr/Comment.nvim"}
+local Comment = { "numToStr/Comment.nvim" }
 
 Comment.keys = { "gc", "gcc", "gbc" }
 

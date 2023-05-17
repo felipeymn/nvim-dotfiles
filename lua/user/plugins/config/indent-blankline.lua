@@ -9,12 +9,14 @@ function IndentBlankline.config()
   end
 
   indent_blankline.setup({
-    buftype_exclude = { "terminal", "nofile" },
+    buftype_exclude = { "terminal", "nofile", "telescope" },
+    show_current_context = true,
     filetype_exclude = {
       "help",
       "dashboard",
       "NvimTree",
-      "Telescope"
+      "Telescope",
+      "yuck",
     },
     char = "│",
   })

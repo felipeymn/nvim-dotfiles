@@ -1,7 +1,9 @@
 local Servers = {
-  "sumneko_lua",
-  "marksman",
-  "pylsp"
+	"lua_ls",
+	"marksman",
+	"pylsp",
+	"tsserver",
+	-- "tailwindcss",
 }
 
 return Servers
