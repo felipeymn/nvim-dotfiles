@@ -1,5 +1,5 @@
 local Colorizer = {
-"NvChad/nvim-colorizer.lua"
+  "NvChad/nvim-colorizer.lua",
 }
 
 Colorizer.event = "BufReadPre"
