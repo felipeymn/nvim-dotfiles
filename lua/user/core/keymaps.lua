@@ -26,6 +26,7 @@ keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
 
 keymap("n", "<leader>l", "<cmd>:Lazy<cr>")
+keymap("n", "<leader>m", "<cmd>:Inspect<cr>")
 -- Nvim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>")
 -- Disable arrow keys
