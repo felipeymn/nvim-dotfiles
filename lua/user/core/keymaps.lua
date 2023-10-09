@@ -13,10 +13,10 @@ end
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.keymap.set("n", "<space>m", function()
-	vim.lsp.buf.format({ async = true })
-end, bufopts)
-keymap("n", "<Space>", "<Nop>")
+-- vim.keymap.set("n", "<space>m", function()
+-- 	vim.lsp.buf.format({ async = true })
+-- end, bufopts)
+-- keymap("n", "<Space>", "<Nop>")
 
 -- Normal --
 -- Better window navigation

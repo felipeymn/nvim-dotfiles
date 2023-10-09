@@ -9,6 +9,7 @@ Cmp.dependencies = {
 	"hrsh7th/cmp-cmdline",
 	"dmitmel/cmp-cmdline-history",
 	"hrsh7th/cmp-path",
+	"kirasok/cmp-hledger",
 	"saadparwaiz1/cmp_luasnip",
 	"L3MON4D3/LuaSnip", -- snippet engine
 	"rafamadriz/friendly-snippets", -- a bunch of snippets to use
@@ -118,6 +119,7 @@ function Cmp.config()
 				vim_item.menu = ({
 					nvim_lsp = "LSP",
 					nvim_lua = "NVIM_LUA",
+					hledger = "hledger",
 					luasnip = "Snippet",
 					buffer = "Buffer",
 					path = "Path",
@@ -135,6 +137,7 @@ function Cmp.config()
 			{ name = "buffer" },
 			{ name = "path" },
 			{ name = "emoji" },
+			{ name = "hledger" },
 		}),
 		experimental = {
 			ghost_text = {
