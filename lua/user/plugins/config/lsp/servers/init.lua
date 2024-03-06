@@ -4,6 +4,7 @@ local Servers = {
 	-- "pylsp",
 	"tsserver",
 	"tailwindcss",
+	"gopls",
 }
 
 return Servers

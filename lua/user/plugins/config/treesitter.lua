@@ -1,6 +1,6 @@
 local Treesitter = { "nvim-treesitter/nvim-treesitter" }
 Treesitter.build = ":TSUpdate"
-Treesitter.event = "BufReadPost"
+Treesitter.event = { "BufReadPost", "BufNewFile" }
 function Treesitter.config()
 	local status_ok, configs = pcall(require, "nvim-treesitter.configs")
 	if not status_ok then
@@ -10,7 +10,7 @@ function Treesitter.config()
 		autotag = {
 			enable = true,
 		},
-		ensure_installed = "all",
+		ensure_installed = { "lua", "markdown", "bash", "python", "go" },
 		highlight = { enable = true },
 		indent = { enable = true, disable = { "python" } },
 	})

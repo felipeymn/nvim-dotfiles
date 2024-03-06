@@ -2,21 +2,13 @@ local function keymap(mode, keys, func, desc)
 	vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = desc })
 end
 
--- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
---Remap space as leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- vim.keymap.set("n", "<space>m", function()
--- 	vim.lsp.buf.format({ async = true })
--- end, bufopts)
--- keymap("n", "<Space>", "<Nop>")
+vim.keymap.set("n", "<space>m", function()
+	vim.lsp.buf.format({ async = true })
+end, bufopts)
+keymap("n", "<Space>", "<Nop>")
 
 -- Normal --
 -- Better window navigation
@@ -26,7 +18,7 @@ keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
 
 keymap("n", "<leader>l", "<cmd>:Lazy<cr>")
-keymap("n", "<leader>m", "<cmd>:Inspect<cr>")
+-- keymap("n", "<leader>m", "<cmd>:Inspect<cr>")
 -- Nvim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>")
 -- Disable arrow keys

@@ -9,16 +9,22 @@ function IndentBlankline.config()
 	end
 
 	indent_blankline.setup({
-		-- buftype_exclude = { "terminal", "nofile", "telescope" },
-		-- show_current_context = true,
-		-- filetype_exclude = {
-		-- 	"help",
-		-- 	"dashboard",
-		-- 	"NvimTree",
-		-- 	"Telescope",
-		-- 	"yuck",
-		-- },
-		-- char = "│",
+		indent = {
+			char = "│",
+			tab_char = "│",
+		},
+		scope = { enabled = false },
+		exclude = {
+			filetypes = {
+				"help",
+				"alpha",
+				"neo-tree",
+				"trouble",
+				"lazy",
+				"mason",
+				"toggleterm",
+			},
+		},
 	})
 end
 
