@@ -14,6 +14,8 @@ function Conform.config()
 		formatters_by_ft = {
 			lua = { "stylua" },
 			javascript = { "prettierd" },
+			typescript = { "prettierd" },
+			typescriptreact = { "prettierd" },
 			go = { "golines" },
 		},
 		format_on_save = {
