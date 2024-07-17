@@ -5,6 +5,7 @@ local Servers = {
 	"tsserver",
 	"tailwindcss",
 	"gopls",
+	"angularls",
 }
 
 return Servers
