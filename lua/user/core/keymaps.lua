@@ -64,6 +64,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv")
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>")
 --keymap("n","<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>")
 keymap("n", "<leader>F", "<cmd>Telescope live_grep<cr>")
+keymap("n", "<leader>b", "<cmd>Telescope buffers<cr>")
 
 keymap("n", "<leader>d", vim.diagnostic.open_float, "Open float")
 keymap("n", "<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")

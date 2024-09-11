@@ -54,6 +54,7 @@ return {
 						["unbalanced"] = "Opened",
 						["unused"] = "Opened",
 					},
+					globals = { "vim" },
 					unusedLocalExclude = { "_*" },
 				},
 				format = {

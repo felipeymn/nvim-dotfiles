@@ -12,7 +12,8 @@ local options = {
 	mouse = "a", -- allow the mouse to be used in neovim
 	pumheight = 10, -- pop up menu height
 	showmode = false, -- we don't need to see things like -- INSERT -- anymore
-	showtabline = 2, -- always show tabs
+	-- showtabline = 2, -- always show tabs
+	showtabline = 0,
 	smartcase = true, -- smart case
 	smartindent = true, -- make indenting smarter again
 	splitbelow = true, -- force all horizontal splits to go below current window
@@ -34,7 +35,7 @@ local options = {
 	wrap = false, -- display lines as one long line
 	scrolloff = 8, -- is one of my fav
 	sidescrolloff = 8,
-	laststatus = 3, -- set only one status line per window
+	-- laststatus = 3, -- set only one status line per window
 }
 
 vim.opt.shortmess:append("c")

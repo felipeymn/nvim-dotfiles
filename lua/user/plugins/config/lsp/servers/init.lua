@@ -2,7 +2,7 @@ local Servers = {
 	"lua_ls",
 	"marksman",
 	-- "pylsp",
-	"tsserver",
+	"ts_ls",
 	"tailwindcss",
 	"gopls",
 	"angularls",

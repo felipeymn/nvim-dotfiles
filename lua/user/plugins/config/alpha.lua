@@ -24,7 +24,7 @@ function Alpha.config()
 		desc = "enable status, tabline and cmdline after alpha",
 		callback = function()
 			vim.go.laststatus = 3
-			vim.opt.showtabline = 2
+			-- vim.opt.showtabline = 2
 			--[[ vim.opt.cmdheight = 1 ]]
 		end,
 	})

@@ -53,6 +53,7 @@ function Cmp.config()
 		Event = "",
 		Operator = "",
 		TypeParameter = "",
+		Codeium = "󰧑",
 	}
 	-- find more here: https://www.nerdfonts.com/cheat-sheet
 	local check_backspace = function()
@@ -117,6 +118,7 @@ function Cmp.config()
 				-- Kind icons
 				vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
 				vim_item.menu = ({
+					codeium = "IA",
 					nvim_lsp = "LSP",
 					nvim_lua = "NVIM_LUA",
 					hledger = "hledger",
@@ -132,6 +134,7 @@ function Cmp.config()
 			documentation = cmp.config.window.bordered(),
 		},
 		sources = cmp.config.sources({
+			{ name = "codeium" },
 			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
 			{ name = "buffer" },
