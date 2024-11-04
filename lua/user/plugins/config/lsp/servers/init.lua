@@ -6,6 +6,8 @@ local Servers = {
 	"tailwindcss",
 	"gopls",
 	"angularls",
+	"rubocop",
+	"elixirls",
 }
 
 return Servers
