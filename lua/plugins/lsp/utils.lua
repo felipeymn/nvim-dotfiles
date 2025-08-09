@@ -8,7 +8,10 @@ local Utils = {
 
 	set_diagnostics_signs = function(self)
 		for _, sign in ipairs(self.diagnostic_signs) do
-			vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
+			vim.fn.sign_define(
+				sign.name,
+				{ texthl = sign.name, text = sign.text, numhl = "" }
+			)
 		end
 	end,
 
@@ -16,7 +19,7 @@ local Utils = {
 		vim.diagnostic.config(diagnostics)
 	end,
 
-	setup_mason_server = function(servers, setupFunction)
+	setup_mason_server = function(servers)
 		local mlsp = require("mason-lspconfig")
 
 		local ensure_installed = {} ---@type string[]
@@ -27,8 +30,10 @@ local Utils = {
 			end
 		end
 
-		mlsp.setup({ ensure_installed = ensure_installed, automatic_installation = true })
-		mlsp.setup_handlers({ setupFunction })
+		mlsp.setup({
+			ensure_installed = ensure_installed,
+			automatic_installation = true,
+		})
 	end,
 }
 

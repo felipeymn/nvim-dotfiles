@@ -4,7 +4,7 @@ local Servers = {
 	angularls = {},
 	rubocop = {},
 	ts_ls = {},
-	marksman = {},
+	-- marksman = {},
 	lua_ls = {
 		settings = {
 			telemetry = { enable = false },

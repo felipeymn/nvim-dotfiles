@@ -13,22 +13,8 @@ local Lsp = {
 	config = function(_, opts)
 		local utils = require("plugins.lsp.utils")
 		local servers = opts.servers
-		local capabilities = vim.tbl_deep_extend(
-			"force",
-			{},
-			vim.lsp.protocol.make_client_capabilities(),
-			require("cmp_nvim_lsp").default_capabilities(),
-			opts.capabilities or {}
-		)
 
-		local function setup(server_name)
-			local server_opts = vim.tbl_deep_extend("force", {
-				capabilities = vim.deepcopy(capabilities),
-			}, servers[server_name] or {})
-			require("lspconfig")[server_name].setup(server_opts)
-		end
-
-		utils.setup_mason_server(servers, setup)
+		utils.setup_mason_server(servers)
 		utils.set_diagnostics_config(vim.deepcopy(opts.diagnostics))
 		utils:set_diagnostics_signs()
 	end,
